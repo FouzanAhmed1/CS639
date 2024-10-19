@@ -1,7 +1,3 @@
-
-### **README for KotlinLesson2**
-
-```markdown
 # Kotlin Lesson 2: Android Development with Kotlin Pathway
 
 ## Assignment Overview
