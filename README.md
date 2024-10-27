@@ -15,6 +15,14 @@ The repository is organized into the following directories:
   
 - **KotlinLesson2**: This directory contains the code for the second Kotlin lesson from the Android Development with Kotlin Pathway. It delves deeper into Kotlin, covering topics like collections, lambdas, and higher-order functions.
 
+- **MidtermFouzanAhmed**:
+- This project is an Android application that computes the area of a circle using the formula \[ \text{Area} = \pi \times r^2 \].
+- The application allows users to input the radius and calculates the area using \(\pi \approx 3.14\).
+- Includes the following deliverables:
+  - XML layout for user input.
+  - Logic for area calculation implemented in Kotlin.
+  - Screenshots, APK, and a video demonstration of the app's functionality.
+
 ### Project Details
 Each directory contains a `README.md` with more information about the project or lesson, along with instructions on how to run the code and links to the relevant Android development pathway resources.
 
