@@ -2,11 +2,10 @@
     <string name="app_name">MidtermFouzanAhmed</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Radius to Area</string>
-    <string name="convert">Convert</string>
+    <string name="convert">Calculate</string>
 
-    <string name="app_creater"><u>
-        This app was developed by Fouzan Ahmed</u>
+    <string name="app_creater"><u>This app was developed by Fouzan Ahmed</u>
     </string>
 
-    <string name="gallons">Area</string>
+    <string name="Area">Calculate Area</string>
 </resources>

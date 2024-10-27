@@ -12,41 +12,39 @@
         android:padding="16dp"
         android:background="@color/yellow">
 
-    <EditText
-        android:id="@+id/editTextRadius"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter Radius"
-        android:inputType="numberDecimal"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-    />
+        <EditText
+            android:id="@+id/editTextRadius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Radius"
+            android:inputType="numberDecimal"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
 
-    <Button
-        android:id="@+id/button_first"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/convert"
-        app:layout_constraintTop_toBottomOf="@id/editTextRadius"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-    />
+        <Button
+            android:id="@+id/buttonCalculateArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Area"
+            app:layout_constraintTop_toBottomOf="@id/editTextRadius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
 
         <TextView
             android:id="@+id/textViewForArea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/gallons"
-            app:layout_constraintTop_toBottomOf="@id/button_first"
+            android:hint="Area"
+            app:layout_constraintTop_toBottomOf="@id/buttonCalculateArea"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp"
@@ -67,5 +65,5 @@
             android:layout_marginEnd="16dp"
             android:textSize="18sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -1,7 +1,5 @@
 package com.example.midtermfouzanahmed;
 
-import android.app.Fragment;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.navigation.fragment.NavHostFragment;
+import androidx.fragment.app.Fragment;
 
 import com.example.midtermfouzanahmed.databinding.FragmentFirstBinding;
 
@@ -20,6 +18,7 @@ public class FirstFragment extends Fragment {
     private EditText radiusInput;
     private TextView areaOutput;
     private static final String TAG = "TAG";
+    private static final double PI = 3.14;
 
     private FragmentFirstBinding binding;
 
@@ -28,33 +27,32 @@ public class FirstFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
         binding = FragmentFirstBinding.inflate(inflater, container, false);
         return binding.getRoot();
-
     }
 
+    @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        radiusInput = binding.editTextRadius;
-        areaOutput = binding.textViewForArea;
+        radiusInput = binding.editTextRadius; // Assuming you renamed this EditText for radius
+        areaOutput = binding.textViewForArea; // Assuming you renamed this TextView for area output
 
-        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
+        binding.buttonCalculateArea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String radiusStr = radiusInput.getText().toString().trim();
 
                 if (radiusStr.isEmpty()) {
-                    areaOutput.setText("Please enter radius.");
-                    Log.i(TAG,"Cant be empty");
+                    areaOutput.setText("Please enter the radius.");
+                    Log.i(TAG, "Radius cannot be empty");
                     return;
                 }
 
                 try {
-                    double radiusInput = Double.parseDouble(radiusStr);
-                    double area = 3.14 * radiusInput * radiusInput;
-                    areaOutput.setText(String.format("%.2f area", area));
+                    double radius = Double.parseDouble(radiusStr);
+                    double area = PI * radius * radius;
+                    areaOutput.setText(String.format("Area: %.2f", area));
                 } catch (NumberFormatException e) {
                     areaOutput.setText("Invalid input. Please enter a valid number.");
                 }
@@ -67,5 +65,4 @@ public class FirstFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }
