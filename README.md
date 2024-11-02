@@ -15,6 +15,10 @@ The repository is organized into the following directories:
   
 - **KotlinLesson2**: This directory contains the code for the second Kotlin lesson from the Android Development with Kotlin Pathway. It delves deeper into Kotlin, covering topics like collections, lambdas, and higher-order functions.
 
+- **KotlinLesson3**: This directory contains the code for the third lesson of the **Android Development with Kotlin** course. This lesson builds upon previous knowledge and introduces new concepts, including object-oriented programming, coroutines, and Android UI components.
+
+- **HappyBirthday**: This directory contains the code for the **HappyBirthday** app, developed as part of the Kotlin 4 Pathway. This app showcases the use of Jetpack Compose to create a simple yet interactive birthday greeting application.
+
 - **MidtermFouzanAhmed**:
   - This project is an Android application that computes the area of a circle using the formula \[ \text{Area} = \pi \times r^2 \].
   - The application allows users to input the radius and calculates the area using \(\pi \approx 3.14\).
